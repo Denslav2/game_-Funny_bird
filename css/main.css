@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:rgb(182, 255, 231);
+}
+h2{
+    text-align: center;
+    font-family: 'Roboto';
+    color:rgb(255, 245, 101);
+    font-size: 35px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+    animation: animate .7s infinite;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#canvas{
+    border-radius: 5px;
+}
+@keyframes animate{
+    0%{
+        text-shadow: 3px 3px 0 rgb(0, 28, 255);
+    }
+    25%{
+        text-shadow: -3px -3px 0 rgb(234, 0, 255);
+    }
+    75%{
+        text-shadow: 3px 3px 0 rgb(0, 28, 255);
+    }
+    100%{
+        text-shadow: -3px -3px 0 rgb(234, 0, 255);
+    }
+
+}
